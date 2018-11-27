@@ -1,0 +1,2922 @@
+|hw_5
+adc_in[0] => adc_in[0].IN11
+adc_in[1] => adc_in[1].IN11
+adc_in[2] => adc_in[2].IN11
+adc_in[3] => adc_in[3].IN11
+adc_in[4] => adc_in[4].IN11
+adc_in[5] => adc_in[5].IN11
+adc_in[6] => adc_in[6].IN11
+adc_in[7] => adc_in[7].IN11
+sev_seg_out[0] <= sev_seg_decoder:sev_seg.port1
+sev_seg_out[1] <= sev_seg_decoder:sev_seg.port1
+sev_seg_out[2] <= sev_seg_decoder:sev_seg.port1
+sev_seg_out[3] <= sev_seg_decoder:sev_seg.port1
+sev_seg_out[4] <= sev_seg_decoder:sev_seg.port1
+sev_seg_out[5] <= sev_seg_decoder:sev_seg.port1
+sev_seg_out[6] <= sev_seg_decoder:sev_seg.port1
+sev_seg_out[7] <= sev_seg_decoder:sev_seg.port1
+sev_seg_huns[0] <= sev_seg_decoder_4bit:sev_seg_disp_huns.port1
+sev_seg_huns[1] <= sev_seg_decoder_4bit:sev_seg_disp_huns.port1
+sev_seg_huns[2] <= sev_seg_decoder_4bit:sev_seg_disp_huns.port1
+sev_seg_huns[3] <= sev_seg_decoder_4bit:sev_seg_disp_huns.port1
+sev_seg_huns[4] <= sev_seg_decoder_4bit:sev_seg_disp_huns.port1
+sev_seg_huns[5] <= sev_seg_decoder_4bit:sev_seg_disp_huns.port1
+sev_seg_huns[6] <= sev_seg_decoder_4bit:sev_seg_disp_huns.port1
+sev_seg_huns[7] <= sev_seg_decoder_4bit:sev_seg_disp_huns.port1
+sev_seg_tens[0] <= sev_seg_decoder_4bit:sev_seg_disp_tens.port1
+sev_seg_tens[1] <= sev_seg_decoder_4bit:sev_seg_disp_tens.port1
+sev_seg_tens[2] <= sev_seg_decoder_4bit:sev_seg_disp_tens.port1
+sev_seg_tens[3] <= sev_seg_decoder_4bit:sev_seg_disp_tens.port1
+sev_seg_tens[4] <= sev_seg_decoder_4bit:sev_seg_disp_tens.port1
+sev_seg_tens[5] <= sev_seg_decoder_4bit:sev_seg_disp_tens.port1
+sev_seg_tens[6] <= sev_seg_decoder_4bit:sev_seg_disp_tens.port1
+sev_seg_tens[7] <= sev_seg_decoder_4bit:sev_seg_disp_tens.port1
+sev_seg_ones[0] <= sev_seg_decoder_4bit:sev_seg_disp_ones.port1
+sev_seg_ones[1] <= sev_seg_decoder_4bit:sev_seg_disp_ones.port1
+sev_seg_ones[2] <= sev_seg_decoder_4bit:sev_seg_disp_ones.port1
+sev_seg_ones[3] <= sev_seg_decoder_4bit:sev_seg_disp_ones.port1
+sev_seg_ones[4] <= sev_seg_decoder_4bit:sev_seg_disp_ones.port1
+sev_seg_ones[5] <= sev_seg_decoder_4bit:sev_seg_disp_ones.port1
+sev_seg_ones[6] <= sev_seg_decoder_4bit:sev_seg_disp_ones.port1
+sev_seg_ones[7] <= sev_seg_decoder_4bit:sev_seg_disp_ones.port1
+debug_sw => comb.IN1
+debug_sw => comb.IN1
+debug_sw => comb.IN1
+debug_sw => comb.IN1
+debug_sw => comb.IN1
+debug_sw => comb.IN1
+debug_sw => comb.IN1
+debug_sw => comb.IN1
+debug_sw => comb.IN1
+debug_sw => comb.IN1
+debug_sw => comb.IN1
+debug_sw => comb.IN1
+
+
+|hw_5|comparator:comp0
+in[0] => in[0].IN2
+in[1] => in[1].IN2
+in[2] => in[2].IN2
+in[3] => in[3].IN2
+in[4] => in[4].IN2
+in[5] => in[5].IN2
+in[6] => in[6].IN2
+in[7] => in[7].IN2
+comp_with[0] => comp_with[0].IN2
+comp_with[1] => comp_with[1].IN2
+comp_with[2] => comp_with[2].IN2
+comp_with[3] => comp_with[3].IN2
+comp_with[4] => comp_with[4].IN2
+comp_with[5] => comp_with[5].IN2
+comp_with[6] => comp_with[6].IN2
+comp_with[7] => comp_with[7].IN2
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp0|convert_to_lt_mux:clt_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp0|four_to_one_multiplexer:mux_l0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp0|convert_to_lt_mux:clt_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp0|four_to_one_multiplexer:mux_l1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp0|convert_to_lt_mux:clt_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp0|four_to_one_multiplexer:mux_l2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp0|convert_to_lt_mux:clt_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp0|four_to_one_multiplexer:mux_l3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp0|convert_to_eq_mux:ceq_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp0|four_to_one_multiplexer:mux_e0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp0|convert_to_eq_mux:ceq_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp0|four_to_one_multiplexer:mux_e1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp0|convert_to_eq_mux:ceq_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp0|four_to_one_multiplexer:mux_e2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp0|convert_to_eq_mux:ceq_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp0|four_to_one_multiplexer:mux_e3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp1
+in[0] => in[0].IN2
+in[1] => in[1].IN2
+in[2] => in[2].IN2
+in[3] => in[3].IN2
+in[4] => in[4].IN2
+in[5] => in[5].IN2
+in[6] => in[6].IN2
+in[7] => in[7].IN2
+comp_with[0] => comp_with[0].IN2
+comp_with[1] => comp_with[1].IN2
+comp_with[2] => comp_with[2].IN2
+comp_with[3] => comp_with[3].IN2
+comp_with[4] => comp_with[4].IN2
+comp_with[5] => comp_with[5].IN2
+comp_with[6] => comp_with[6].IN2
+comp_with[7] => comp_with[7].IN2
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp1|convert_to_lt_mux:clt_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp1|four_to_one_multiplexer:mux_l0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp1|convert_to_lt_mux:clt_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp1|four_to_one_multiplexer:mux_l1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp1|convert_to_lt_mux:clt_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp1|four_to_one_multiplexer:mux_l2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp1|convert_to_lt_mux:clt_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp1|four_to_one_multiplexer:mux_l3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp1|convert_to_eq_mux:ceq_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp1|four_to_one_multiplexer:mux_e0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp1|convert_to_eq_mux:ceq_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp1|four_to_one_multiplexer:mux_e1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp1|convert_to_eq_mux:ceq_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp1|four_to_one_multiplexer:mux_e2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp1|convert_to_eq_mux:ceq_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp1|four_to_one_multiplexer:mux_e3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp2
+in[0] => in[0].IN2
+in[1] => in[1].IN2
+in[2] => in[2].IN2
+in[3] => in[3].IN2
+in[4] => in[4].IN2
+in[5] => in[5].IN2
+in[6] => in[6].IN2
+in[7] => in[7].IN2
+comp_with[0] => comp_with[0].IN2
+comp_with[1] => comp_with[1].IN2
+comp_with[2] => comp_with[2].IN2
+comp_with[3] => comp_with[3].IN2
+comp_with[4] => comp_with[4].IN2
+comp_with[5] => comp_with[5].IN2
+comp_with[6] => comp_with[6].IN2
+comp_with[7] => comp_with[7].IN2
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp2|convert_to_lt_mux:clt_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp2|four_to_one_multiplexer:mux_l0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp2|convert_to_lt_mux:clt_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp2|four_to_one_multiplexer:mux_l1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp2|convert_to_lt_mux:clt_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp2|four_to_one_multiplexer:mux_l2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp2|convert_to_lt_mux:clt_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp2|four_to_one_multiplexer:mux_l3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp2|convert_to_eq_mux:ceq_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp2|four_to_one_multiplexer:mux_e0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp2|convert_to_eq_mux:ceq_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp2|four_to_one_multiplexer:mux_e1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp2|convert_to_eq_mux:ceq_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp2|four_to_one_multiplexer:mux_e2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp2|convert_to_eq_mux:ceq_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp2|four_to_one_multiplexer:mux_e3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp3
+in[0] => in[0].IN2
+in[1] => in[1].IN2
+in[2] => in[2].IN2
+in[3] => in[3].IN2
+in[4] => in[4].IN2
+in[5] => in[5].IN2
+in[6] => in[6].IN2
+in[7] => in[7].IN2
+comp_with[0] => comp_with[0].IN2
+comp_with[1] => comp_with[1].IN2
+comp_with[2] => comp_with[2].IN2
+comp_with[3] => comp_with[3].IN2
+comp_with[4] => comp_with[4].IN2
+comp_with[5] => comp_with[5].IN2
+comp_with[6] => comp_with[6].IN2
+comp_with[7] => comp_with[7].IN2
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp3|convert_to_lt_mux:clt_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp3|four_to_one_multiplexer:mux_l0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp3|convert_to_lt_mux:clt_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp3|four_to_one_multiplexer:mux_l1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp3|convert_to_lt_mux:clt_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp3|four_to_one_multiplexer:mux_l2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp3|convert_to_lt_mux:clt_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp3|four_to_one_multiplexer:mux_l3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp3|convert_to_eq_mux:ceq_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp3|four_to_one_multiplexer:mux_e0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp3|convert_to_eq_mux:ceq_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp3|four_to_one_multiplexer:mux_e1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp3|convert_to_eq_mux:ceq_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp3|four_to_one_multiplexer:mux_e2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp3|convert_to_eq_mux:ceq_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp3|four_to_one_multiplexer:mux_e3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp4
+in[0] => in[0].IN2
+in[1] => in[1].IN2
+in[2] => in[2].IN2
+in[3] => in[3].IN2
+in[4] => in[4].IN2
+in[5] => in[5].IN2
+in[6] => in[6].IN2
+in[7] => in[7].IN2
+comp_with[0] => comp_with[0].IN2
+comp_with[1] => comp_with[1].IN2
+comp_with[2] => comp_with[2].IN2
+comp_with[3] => comp_with[3].IN2
+comp_with[4] => comp_with[4].IN2
+comp_with[5] => comp_with[5].IN2
+comp_with[6] => comp_with[6].IN2
+comp_with[7] => comp_with[7].IN2
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp4|convert_to_lt_mux:clt_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp4|four_to_one_multiplexer:mux_l0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp4|convert_to_lt_mux:clt_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp4|four_to_one_multiplexer:mux_l1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp4|convert_to_lt_mux:clt_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp4|four_to_one_multiplexer:mux_l2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp4|convert_to_lt_mux:clt_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp4|four_to_one_multiplexer:mux_l3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp4|convert_to_eq_mux:ceq_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp4|four_to_one_multiplexer:mux_e0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp4|convert_to_eq_mux:ceq_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp4|four_to_one_multiplexer:mux_e1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp4|convert_to_eq_mux:ceq_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp4|four_to_one_multiplexer:mux_e2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp4|convert_to_eq_mux:ceq_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp4|four_to_one_multiplexer:mux_e3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp5
+in[0] => in[0].IN2
+in[1] => in[1].IN2
+in[2] => in[2].IN2
+in[3] => in[3].IN2
+in[4] => in[4].IN2
+in[5] => in[5].IN2
+in[6] => in[6].IN2
+in[7] => in[7].IN2
+comp_with[0] => comp_with[0].IN2
+comp_with[1] => comp_with[1].IN2
+comp_with[2] => comp_with[2].IN2
+comp_with[3] => comp_with[3].IN2
+comp_with[4] => comp_with[4].IN2
+comp_with[5] => comp_with[5].IN2
+comp_with[6] => comp_with[6].IN2
+comp_with[7] => comp_with[7].IN2
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp5|convert_to_lt_mux:clt_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp5|four_to_one_multiplexer:mux_l0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp5|convert_to_lt_mux:clt_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp5|four_to_one_multiplexer:mux_l1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp5|convert_to_lt_mux:clt_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp5|four_to_one_multiplexer:mux_l2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp5|convert_to_lt_mux:clt_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp5|four_to_one_multiplexer:mux_l3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp5|convert_to_eq_mux:ceq_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp5|four_to_one_multiplexer:mux_e0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp5|convert_to_eq_mux:ceq_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp5|four_to_one_multiplexer:mux_e1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp5|convert_to_eq_mux:ceq_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp5|four_to_one_multiplexer:mux_e2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp5|convert_to_eq_mux:ceq_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp5|four_to_one_multiplexer:mux_e3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp6
+in[0] => in[0].IN2
+in[1] => in[1].IN2
+in[2] => in[2].IN2
+in[3] => in[3].IN2
+in[4] => in[4].IN2
+in[5] => in[5].IN2
+in[6] => in[6].IN2
+in[7] => in[7].IN2
+comp_with[0] => comp_with[0].IN2
+comp_with[1] => comp_with[1].IN2
+comp_with[2] => comp_with[2].IN2
+comp_with[3] => comp_with[3].IN2
+comp_with[4] => comp_with[4].IN2
+comp_with[5] => comp_with[5].IN2
+comp_with[6] => comp_with[6].IN2
+comp_with[7] => comp_with[7].IN2
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp6|convert_to_lt_mux:clt_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp6|four_to_one_multiplexer:mux_l0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp6|convert_to_lt_mux:clt_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp6|four_to_one_multiplexer:mux_l1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp6|convert_to_lt_mux:clt_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp6|four_to_one_multiplexer:mux_l2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp6|convert_to_lt_mux:clt_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp6|four_to_one_multiplexer:mux_l3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp6|convert_to_eq_mux:ceq_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp6|four_to_one_multiplexer:mux_e0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp6|convert_to_eq_mux:ceq_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp6|four_to_one_multiplexer:mux_e1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp6|convert_to_eq_mux:ceq_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp6|four_to_one_multiplexer:mux_e2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp6|convert_to_eq_mux:ceq_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp6|four_to_one_multiplexer:mux_e3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp7
+in[0] => in[0].IN2
+in[1] => in[1].IN2
+in[2] => in[2].IN2
+in[3] => in[3].IN2
+in[4] => in[4].IN2
+in[5] => in[5].IN2
+in[6] => in[6].IN2
+in[7] => in[7].IN2
+comp_with[0] => comp_with[0].IN2
+comp_with[1] => comp_with[1].IN2
+comp_with[2] => comp_with[2].IN2
+comp_with[3] => comp_with[3].IN2
+comp_with[4] => comp_with[4].IN2
+comp_with[5] => comp_with[5].IN2
+comp_with[6] => comp_with[6].IN2
+comp_with[7] => comp_with[7].IN2
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp7|convert_to_lt_mux:clt_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp7|four_to_one_multiplexer:mux_l0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp7|convert_to_lt_mux:clt_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp7|four_to_one_multiplexer:mux_l1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp7|convert_to_lt_mux:clt_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp7|four_to_one_multiplexer:mux_l2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp7|convert_to_lt_mux:clt_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp7|four_to_one_multiplexer:mux_l3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp7|convert_to_eq_mux:ceq_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp7|four_to_one_multiplexer:mux_e0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp7|convert_to_eq_mux:ceq_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp7|four_to_one_multiplexer:mux_e1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp7|convert_to_eq_mux:ceq_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp7|four_to_one_multiplexer:mux_e2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp7|convert_to_eq_mux:ceq_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp7|four_to_one_multiplexer:mux_e3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp8
+in[0] => in[0].IN2
+in[1] => in[1].IN2
+in[2] => in[2].IN2
+in[3] => in[3].IN2
+in[4] => in[4].IN2
+in[5] => in[5].IN2
+in[6] => in[6].IN2
+in[7] => in[7].IN2
+comp_with[0] => comp_with[0].IN2
+comp_with[1] => comp_with[1].IN2
+comp_with[2] => comp_with[2].IN2
+comp_with[3] => comp_with[3].IN2
+comp_with[4] => comp_with[4].IN2
+comp_with[5] => comp_with[5].IN2
+comp_with[6] => comp_with[6].IN2
+comp_with[7] => comp_with[7].IN2
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp8|convert_to_lt_mux:clt_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp8|four_to_one_multiplexer:mux_l0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp8|convert_to_lt_mux:clt_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp8|four_to_one_multiplexer:mux_l1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp8|convert_to_lt_mux:clt_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp8|four_to_one_multiplexer:mux_l2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp8|convert_to_lt_mux:clt_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp8|four_to_one_multiplexer:mux_l3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp8|convert_to_eq_mux:ceq_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp8|four_to_one_multiplexer:mux_e0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp8|convert_to_eq_mux:ceq_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp8|four_to_one_multiplexer:mux_e1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp8|convert_to_eq_mux:ceq_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp8|four_to_one_multiplexer:mux_e2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp8|convert_to_eq_mux:ceq_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp8|four_to_one_multiplexer:mux_e3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp9
+in[0] => in[0].IN2
+in[1] => in[1].IN2
+in[2] => in[2].IN2
+in[3] => in[3].IN2
+in[4] => in[4].IN2
+in[5] => in[5].IN2
+in[6] => in[6].IN2
+in[7] => in[7].IN2
+comp_with[0] => comp_with[0].IN2
+comp_with[1] => comp_with[1].IN2
+comp_with[2] => comp_with[2].IN2
+comp_with[3] => comp_with[3].IN2
+comp_with[4] => comp_with[4].IN2
+comp_with[5] => comp_with[5].IN2
+comp_with[6] => comp_with[6].IN2
+comp_with[7] => comp_with[7].IN2
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp9|convert_to_lt_mux:clt_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp9|four_to_one_multiplexer:mux_l0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp9|convert_to_lt_mux:clt_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp9|four_to_one_multiplexer:mux_l1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp9|convert_to_lt_mux:clt_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp9|four_to_one_multiplexer:mux_l2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp9|convert_to_lt_mux:clt_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= <GND>
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp9|four_to_one_multiplexer:mux_l3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp9|convert_to_eq_mux:ceq_0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp9|four_to_one_multiplexer:mux_e0
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp9|convert_to_eq_mux:ceq_1
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp9|four_to_one_multiplexer:mux_e1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp9|convert_to_eq_mux:ceq_2
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp9|four_to_one_multiplexer:mux_e2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|comparator:comp9|convert_to_eq_mux:ceq_3
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[0] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|comparator:comp9|four_to_one_multiplexer:mux_e3
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => y.IN0
+x[1] => y.IN0
+x[2] => y.IN0
+x[3] => y.IN0
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[0] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+s[1] => y.IN1
+
+
+|hw_5|sev_seg_decoder:sev_seg
+in[0] => Equal0.IN19
+in[0] => Equal1.IN19
+in[0] => Equal2.IN19
+in[0] => Equal3.IN19
+in[0] => Equal4.IN19
+in[0] => Equal5.IN19
+in[0] => Equal6.IN19
+in[0] => Equal7.IN19
+in[0] => Equal8.IN19
+in[0] => Equal9.IN19
+in[1] => Equal0.IN18
+in[1] => Equal1.IN18
+in[1] => Equal2.IN18
+in[1] => Equal3.IN18
+in[1] => Equal4.IN18
+in[1] => Equal5.IN18
+in[1] => Equal6.IN18
+in[1] => Equal7.IN18
+in[1] => Equal8.IN18
+in[1] => Equal9.IN18
+in[2] => Equal0.IN17
+in[2] => Equal1.IN17
+in[2] => Equal2.IN17
+in[2] => Equal3.IN17
+in[2] => Equal4.IN17
+in[2] => Equal5.IN17
+in[2] => Equal6.IN17
+in[2] => Equal7.IN17
+in[2] => Equal8.IN17
+in[2] => Equal9.IN17
+in[3] => Equal0.IN16
+in[3] => Equal1.IN16
+in[3] => Equal2.IN16
+in[3] => Equal3.IN16
+in[3] => Equal4.IN16
+in[3] => Equal5.IN16
+in[3] => Equal6.IN16
+in[3] => Equal7.IN16
+in[3] => Equal8.IN16
+in[3] => Equal9.IN16
+in[4] => Equal0.IN15
+in[4] => Equal1.IN15
+in[4] => Equal2.IN15
+in[4] => Equal3.IN15
+in[4] => Equal4.IN15
+in[4] => Equal5.IN15
+in[4] => Equal6.IN15
+in[4] => Equal7.IN15
+in[4] => Equal8.IN15
+in[4] => Equal9.IN15
+in[5] => Equal0.IN14
+in[5] => Equal1.IN14
+in[5] => Equal2.IN14
+in[5] => Equal3.IN14
+in[5] => Equal4.IN14
+in[5] => Equal5.IN14
+in[5] => Equal6.IN14
+in[5] => Equal7.IN14
+in[5] => Equal8.IN14
+in[5] => Equal9.IN14
+in[6] => Equal0.IN13
+in[6] => Equal1.IN13
+in[6] => Equal2.IN13
+in[6] => Equal3.IN13
+in[6] => Equal4.IN13
+in[6] => Equal5.IN13
+in[6] => Equal6.IN13
+in[6] => Equal7.IN13
+in[6] => Equal8.IN13
+in[6] => Equal9.IN13
+in[7] => Equal0.IN12
+in[7] => Equal1.IN12
+in[7] => Equal2.IN12
+in[7] => Equal3.IN12
+in[7] => Equal4.IN12
+in[7] => Equal5.IN12
+in[7] => Equal6.IN12
+in[7] => Equal7.IN12
+in[7] => Equal8.IN12
+in[7] => Equal9.IN12
+in[8] => Equal0.IN11
+in[8] => Equal1.IN11
+in[8] => Equal2.IN11
+in[8] => Equal3.IN11
+in[8] => Equal4.IN11
+in[8] => Equal5.IN11
+in[8] => Equal6.IN11
+in[8] => Equal7.IN11
+in[8] => Equal8.IN11
+in[8] => Equal9.IN11
+in[9] => Equal0.IN10
+in[9] => Equal1.IN10
+in[9] => Equal2.IN10
+in[9] => Equal3.IN10
+in[9] => Equal4.IN10
+in[9] => Equal5.IN10
+in[9] => Equal6.IN10
+in[9] => Equal7.IN10
+in[9] => Equal8.IN10
+in[9] => Equal9.IN10
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <GND>
+
+
+|hw_5|binary_to_bcd:binary_convert
+binary[0] => Div0.IN14
+binary[0] => Mod0.IN14
+binary[1] => Div0.IN13
+binary[1] => Mod0.IN13
+binary[2] => Div0.IN12
+binary[2] => Mod0.IN12
+binary[3] => Div0.IN11
+binary[3] => Mod0.IN11
+binary[4] => Div0.IN10
+binary[4] => Mod0.IN10
+binary[5] => Div0.IN9
+binary[5] => Mod0.IN9
+binary[6] => Div0.IN8
+binary[6] => Mod0.IN8
+binary[7] => Div0.IN7
+binary[7] => Mod0.IN7
+huns[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+huns[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+huns[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+huns[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+tens[0] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+tens[1] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+tens[2] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+tens[3] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+ones[0] <= Mod1.DB_MAX_OUTPUT_PORT_TYPE
+ones[1] <= Mod1.DB_MAX_OUTPUT_PORT_TYPE
+ones[2] <= Mod1.DB_MAX_OUTPUT_PORT_TYPE
+ones[3] <= Mod1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw_5|sev_seg_decoder_4bit:sev_seg_disp_huns
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <VCC>
+
+
+|hw_5|sev_seg_decoder_4bit:sev_seg_disp_tens
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <VCC>
+
+
+|hw_5|sev_seg_decoder_4bit:sev_seg_disp_ones
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <VCC>
+
+

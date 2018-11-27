@@ -1,5 +1,9 @@
-`timescale 1ns / 1ps 
-// converts 2-bit input to 4-bit less than multiplexer input
+/*****
+**   8-bit Comparator implemented using 4x1 multiplexers
+**		- Authors
+**			- Ahmet Ziya Kanbur & Furkan Sezgin  & Mesut Teyfur
+**	  2018 Marmara University EE
+*****/  
 module convert_to_lt_mux( in, out );
     input[1:0] in;
     output[3:0] out;

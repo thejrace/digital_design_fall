@@ -1,15 +1,23 @@
-`timescale 1ns / 1ps
+/*****
+**   8-bit Comparator implemented using 4x1 multiplexers
+**		- Authors
+**			- Ahmet Ziya Kanbur & Furkan Sezgin  & Mesut Teyfur
+**	  2018 Marmara University EE
+*****/   
 module comparator( in, comp_with, out );
-
+	
     input[7:0] in, comp_with;
     output out;
-
-    //wire gt_input = { 1'b0, (in[7]&in[6]), (in[7]&~in[6])|(in[7]&in[6]), (~in[7]&in[6])|(in[7]&~in[6])|(in[7]&in[6]) }; A < B
-        
+    
+	 // comparison outputs
     wire[3:0] lt0_input, lt1_input, lt2_input, lt3_input;
     wire[3:0] eq0_input, eq1_input, eq2_input, eq3_input;
     
-    // starting from MSBs check( in <? comp )
+    // starting from MSBs check;
+	 // mux_l[x] -> check if 'in <? comp_with' two bit at a time
+	 // mux_e[x] -> check if 'in =? comp_with' two bit at a time
+	 
+	 // mux converters used to be fed into mux inputs according to 'in'
     convert_to_lt_mux clt_0( {in[7], in[6] }, lt0_input );
     wire mux_l0_out;
     four_to_one_multiplexer mux_l0(
@@ -42,7 +50,6 @@ module comparator( in, comp_with, out );
         comp_with[1:0]
     );
     
-    // starting from MSBs check( in =? comp )
     convert_to_eq_mux ceq_0( {in[7], in[6] }, eq0_input );
     wire mux_e0_out;
     four_to_one_multiplexer mux_e0(
@@ -74,11 +81,12 @@ module comparator( in, comp_with, out );
         eq3_input,
         comp_with[1:0]
     ); 
-     
-    assign out =  ( mux_e0_out & mux_e1_out & mux_e2_out & mux_e3_out ) | // in ve comp e?it
-                  ( mux_l0_out ) | // ilk 2bitte comp büyükse
-                  ( mux_e0_out & mux_l1_out ) | // son 2bit e?it, 4-3 seride comp büyükse
-                  ( mux_e0_out & mux_e1_out & mux_l2_out ) | // son 4bit e?it, 2-1 seride comp büyükse
-                  ( mux_e0_out & mux_e1_out & mux_e2_out & mux_l3_out ); // son 6bit e?it, 1-0 seride comp büyükse
+    
+	 // output high if comp_with >= in
+    assign out =  ( mux_e0_out & mux_e1_out & mux_e2_out & mux_e3_out ) | // in = comp_with
+                  ( mux_l0_out ) | // comp > in ( most significant two bits of comp > in )
+                  ( mux_e0_out & mux_l1_out ) | // comp > in ( most significant two bits are equal but 5-4th pair of comp > in )
+                  ( mux_e0_out & mux_e1_out & mux_l2_out ) | // comp > in ( most significant four bits are equal but 3-2nd pair of comp > in )
+                  ( mux_e0_out & mux_e1_out & mux_e2_out & mux_l3_out ); // comp > in ( most significant six bits are equal but 1-0 pair of comp > in )
                     
 endmodule

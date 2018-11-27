@@ -1,4 +1,9 @@
-`timescale 1ns / 1ps
+/*****
+**   8-bit Comparator implemented using 4x1 multiplexers
+**		- Authors
+**			- Ahmet Ziya Kanbur & Furkan Sezgin  & Mesut Teyfur
+**	  2018 Marmara University EE
+*****/  
 module sev_seg_decoder( in, out );
 	input[9:0] in;
 	output reg[7:0] out;
