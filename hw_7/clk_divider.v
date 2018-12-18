@@ -4,7 +4,7 @@ module clk_divider( inclk, outclk );
 	input inclk;
 	output reg outclk;
 	
-	reg[30:0] clkdiv = 0;
+	reg[15:0] clkdiv = 0;
 	
 	initial begin
 		outclk = 0;
@@ -12,13 +12,12 @@ module clk_divider( inclk, outclk );
 	
 	always @(posedge inclk)
 	begin
-		//if( clkdiv == 30'd24999999 )
-		if( clkdiv == 30'd9999 )
+		if( clkdiv == 16'd4999 )
 			begin
-				clkdiv <= 30'd0;
+				clkdiv <= 16'd0;
 				outclk <= ~outclk;
 			end
 			else
-				clkdiv <= clkdiv + 30'd1;
+				clkdiv <= clkdiv + 1;
 	end
 endmodule
