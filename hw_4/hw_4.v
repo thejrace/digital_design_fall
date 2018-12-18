@@ -1,3 +1,4 @@
+/***** Obarey Inc. *****/   
 module hw_4( state_sw, seg1, seg2, test_sw );
 	
 	input state_sw;

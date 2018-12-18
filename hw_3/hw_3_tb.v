@@ -1,3 +1,4 @@
+/***** Obarey Inc. *****/   
 `timescale 1ns / 1ps
 module hw_3_tb;
     reg[3:0] in_t;

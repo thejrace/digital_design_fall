@@ -1,3 +1,4 @@
+/***** Obarey Inc. *****/   
 `timescale 1ns / 1ps
 module hw_3( in, out);
     input[3:0] in;

@@ -1,3 +1,4 @@
+/***** Obarey Inc. *****/   
 module sev_seg_decoder( in, out );
 
 	input[3:0] in;

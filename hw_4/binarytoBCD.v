@@ -1,3 +1,4 @@
+/***** Obarey Inc. *****/   
 module binarytoBCD(binary,tens,ones);
 
 	input [5:0] binary;

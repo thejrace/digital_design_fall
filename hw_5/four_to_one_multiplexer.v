@@ -1,9 +1,4 @@
-/*****
-**   8-bit Comparator implemented using 4x1 multiplexers
-**		- Authors
-**			- Ahmet Ziya Kanbur & Furkan Sezgin  & Mesut Teyfur
-**	  2018 Marmara University EE
-*****/   
+/***** Obarey Inc. *****/   
 module four_to_one_multiplexer(y,x,s);
     input [1:0] s;
     input [3:0] x;

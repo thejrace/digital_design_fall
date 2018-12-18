@@ -1,5 +1,5 @@
+/***** Obarey Inc. *****/   
 `timescale 1ns / 1ps
-
 module hw_2(celc_in, fahr_out);
     input[6:0] celc_in;
     output[12:0] fahr_out;

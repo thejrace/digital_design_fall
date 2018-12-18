@@ -1,9 +1,4 @@
-/*****
-**   8-bit Comparator implemented using 4x1 multiplexers
-**		- Authors
-**			- Ahmet Ziya Kanbur & Furkan Sezgin  & Mesut Teyfur
-**	  2018 Marmara University EE
-*****/   
+/***** Obarey Inc. *****/   
 module hw_5( adc_in, sev_seg_out, sev_seg_huns, sev_seg_tens, sev_seg_ones, debug_sw );
 	  // main in-out definitions
 	  input[7:0] adc_in;
