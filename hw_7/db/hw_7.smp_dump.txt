@@ -1,0 +1,7 @@
+
+State Machine - |hw_7|state
+Name state.RIGHT state.MIDRIGHT state.MIDLEFT state.LEFT 
+state.LEFT 0 0 0 0 
+state.MIDLEFT 0 0 1 1 
+state.MIDRIGHT 0 1 0 1 
+state.RIGHT 1 0 0 1 

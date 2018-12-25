@@ -1,60 +1,62 @@
 /** 2018 Obarey Inc. **/
-module hw_7( clk, sw, reset, sev_seg1, sev_seg2, sev_seg3, sev_seg4 );
+module hw_7( clk, sw, reset, sev_seg1, sev_seg2, clkswitch );
 	input clk;
 	input reset;
+	input[1:0] clkswitch;
 	input[15:0] sw;
-	output reg[7:0] sev_seg1, sev_seg2, sev_seg3, sev_seg4;
+	output reg[7:0] sev_seg1, sev_seg2;
 	
-	reg[3:0] seg_enable;
+	reg[1:0] seg_enable;
 	
-	localparam LEFT = 2'b00, MIDLEFT = 2'b01, MIDRIGHT = 2'b10, RIGHT = 2'b11;
-	reg [1:0] state = LEFT;
+	localparam LEFT = 1'b0, RIGHT = 1'b1;
+	reg state = LEFT;
 	
-	wire clk_1khz;
-	clk_divider clk_div_1khz( clk, clk_1khz );
+	reg active_clk = 0;
+	wire clk_10hz, clk_40hz, clk_50hz, clk_10khz;
+	clk_divider clk_div_1khz( clk, clk_10hz, clk_40hz, clk_50hz, clk_10khz );
 	
-	wire[7:0] seg1, seg2, seg3, seg4;
+	wire[7:0] seg1, seg2;
 	decoder_7seg disp1( sw[3:0], seg1 );
 	decoder_7seg disp2( sw[7:4], seg2 );
-	decoder_7seg disp3( sw[11:8], seg3 );
-	decoder_7seg disp4( sw[15:12], seg4 );
 	
-	always @( posedge clk_1khz ) begin
+	always @( posedge clk ) begin
+		if( clkswitch == 2'b00 ) begin
+			active_clk <= clk_10hz;
+		end
+		else if ( clkswitch == 2'b01 ) begin
+			active_clk <= clk_40hz;
+		end
+		else if( clkswitch == 2'b10 ) begin
+			active_clk <= clk_50hz;
+		end
+		else begin
+			active_clk <= clk_10khz;
+		end
+	end
+	
+	always @( posedge active_clk ) begin
 		if ( reset == 0 ) begin
 		  sev_seg1 <= 8'b111111111;
 		  sev_seg2 <= 8'b111111111;
-		  sev_seg3 <= 8'b111111111;
-		  sev_seg4 <= 8'b111111111;
-		  seg_enable <= 4'b1111;
+		  seg_enable <= 2'b11;
 		  state <= LEFT;
 		end
 		else begin
 			case(state)
 				LEFT:
 					begin
-						seg_enable <= 4'b1110;
-						state <= MIDLEFT;
-					end
-				MIDLEFT:
-					begin
-						seg_enable <= 4'b1101;
-						state <= MIDRIGHT;
-					end
-				MIDRIGHT:
-					begin
-						seg_enable <= 4'b1011;
+						seg_enable <= 2'b10;
 						state <= RIGHT;
 					end
 				RIGHT:
 					begin
-						seg_enable <= 4'b0111;
+						seg_enable <= 4'b01;
 						state <= LEFT;
 					end
 			endcase
 			sev_seg1 <= {8{seg_enable[0]}}|seg1;
 			sev_seg2 <= {8{seg_enable[1]}}|seg2;
-			sev_seg3 <= {8{seg_enable[2]}}|seg3;
-			sev_seg4 <= {8{seg_enable[3]}}|seg4;
 		end // else
 	end
 endmodule
+
